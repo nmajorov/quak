@@ -1,11 +1,26 @@
-# quak Project
+# quarkus and log4j2 sample project
 
 
 Quarkus and log4j2 tests 
 
+```
+curl localhost:8080/hello 
 
+```  
 
+output with log4j2 logger:
 
+```__  ____  
+__  _____   ___  __ ____  ______ 
+ --/ __ \/ / / / _ | / _ \/ //_/ / / / __/ 
+ -/ /_/ / /_/ / __ |/ , _/ ,< / /_/ /\ \   
+--\___\_\____/_/ |_/_/|_/_/|_|\____/___/   
+2021-08-10 20:07:18,957 INFO  [io.quarkus] (Quarkus Main Thread) quak 1.0.0-SNAPSHOT on JVM (powered by Quarkus 2.1.1.Final) started in 1.522s. Listening on: http://localhost:8080
+2021-08-10 20:07:18,973 INFO  [io.quarkus] (Quarkus Main Thread) Profile dev activated. Live Coding activated.
+2021-08-10 20:07:18,974 INFO  [io.quarkus] (Quarkus Main Thread) Installed features: [cdi, resteasy, smallrye-context-propagation]
+     2021-08-10 20:07:22,643 INFO  [biz.maj.GreetingResource] (executor-thread-0) RESTEasy called
+
+```
 
 
 
