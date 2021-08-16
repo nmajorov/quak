@@ -16,7 +16,11 @@ dependencies {
     implementation(enforcedPlatform("${quarkusPlatformGroupId}:${quarkusPlatformArtifactId}:${quarkusPlatformVersion}"))
     implementation("io.quarkus:quarkus-arc")
     implementation("io.quarkus:quarkus-resteasy")
-   implementation("org.jboss.logmanager:log4j2-jboss-logmanager")
+    // quarkus was to use log4j
+    // implementation("org.jboss.logmanager:log4j2-jboss-logmanager")
+    //use standard
+    implementation("org.apache.logging.log4j:log4j-api:2.14.0")
+    implementation("org.apache.logging.log4j:log4j-core:2.14.0")
 
     testImplementation("io.quarkus:quarkus-junit5")
     testImplementation("io.rest-assured:rest-assured")
